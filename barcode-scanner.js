@@ -30,7 +30,7 @@ function onScanSuccess(scanBarcode) {
                 let result = JSON.parse(data);
 
                 if (result['notFoundMessage']) {
-                    error_block.css('display', 'block');
+                    error_block.css('display', 'block'); 
                     error_block.html(result['notFoundMessage']);
 
                     lastScanBarcode = 0;
